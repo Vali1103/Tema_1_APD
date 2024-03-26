@@ -1,0 +1,15 @@
+# tema1
+
+Tema 1 APD
+ Tica Ion Valentin
+ In aceasta tema a fost prelucrarea unui algoritm secvential, deja primit, pe care noi il prelucram
+si-l pararelizam in threaduri. Numarul de threaduri fiind primit ca si parametru. Am avut grija
+sa respect cerintele fara variabile globale, inlocuind cu o structura pe care o furnizam in crearea
+fiecarui thread.
+ Functia threadurilor este una singura, unica, ce a pararelizat 3 functii secventiale rescale_image,
+sample_grid si march. Pararelizarea a avut loc cu ajutorul barierelor pentru a sincroniza threadurile
+si a nu accesa o valoare inainte de a fi prelucrata si fara a deteriora rezultatul.
+ In thread_function, cu ajutorul id-ului furnizat de catre mine fiecarui thread, am impartit calcule
+fiecarui thread. (start, end)
+ In proportie de 70% calculele sunt cam aceleasi, neavand un scop in a le schimba, modificand strictul
+necesar.
